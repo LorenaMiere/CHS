@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">App</string>
+    <string name="continue_as_guest">Continue as guest</string>
+    <string name="log_in_with_facebook">Log in with Facebook</string>
+    <string name="get_started">Get Started</string>
+    <string name="log_in_with_google">Log in with Google</string>
+    <string name="hello_world2">Hello World2!</string>
+</resources>
