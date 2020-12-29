@@ -12,8 +12,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="35dp"
-        android:layout_marginBottom="143dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginBottom="248dp"
         android:text="Weight:" />
 
     <TextView
@@ -22,8 +22,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="39dp"
-        android:layout_marginBottom="101dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="190dp"
         android:text="Height:" />
 
     <TextView
@@ -32,8 +32,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="6dp"
-        android:layout_marginBottom="60dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginBottom="127dp"
         android:text="Activity level:" />
 
     <TextView
@@ -42,8 +42,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="47dp"
-        android:layout_marginBottom="207dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginBottom="308dp"
         android:text="Age:" />
 
     <EditText
@@ -52,11 +52,11 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="194dp"
+        android:layout_marginBottom="296dp"
         android:ems="10"
         android:inputType="number"
-        android:visibility="visible"
-        android:text="visible" />
+        android:text="visible"
+        android:visibility="visible" />
 
     <EditText
         android:id="@+id/editTextNumberDecimal"
@@ -64,11 +64,11 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="134dp"
+        android:layout_marginBottom="238dp"
         android:ems="10"
         android:inputType="numberDecimal"
-        android:visibility="visible"
-        android:text="hello"/>
+        android:text="hello"
+        android:visibility="visible" />
 
     <EditText
         android:id="@+id/editTextNumberDecimal2"
@@ -82,27 +82,56 @@
         android:visibility="visible"
         tools:visibility="visible" />
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_centerInParent="true"
-        android:layout_marginStart="2dp"
-        android:layout_marginTop="-1dp"
-        android:layout_marginEnd="2dp">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" />
-    </ScrollView>
-
     <CheckBox
         android:id="@+id/checkBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="101dp"
+        android:layout_marginBottom="120dp"
         android:text="Active" />
+
+    <EditText
+        android:id="@+id/editTextNumberDecimal3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="180dp"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="142dp"
+        android:layout_marginBottom="121dp"
+        android:text="Moderate" />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="77dp"
+        android:layout_marginBottom="121dp"
+        android:text="Light" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="149dp"
+        android:layout_marginBottom="55dp"
+        android:text="Calculate" />
+
 
 </RelativeLayout>

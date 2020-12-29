@@ -5,4 +5,13 @@
     <string name="get_started">Get Started</string>
     <string name="log_in_with_google">Log in with Google</string>
     <string name="hello_world2">Hello World2!</string>
+    <string name="title_activity_calculator">Calculator</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 </resources>
