@@ -5,51 +5,53 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:visibility="visible"
+    android:background="@drawable/a287a11c793fa60d0c3662cb1683a4142"
     tools:context=".MainActivity">
 
-    <com.mikhaellopez.circularprogressbar.CircularProgressBar
-        android:id="@+id/circularProgressBar"
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="false"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="-1dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="-2dp"
+        android:background="?android:attr/windowBackground"
+        app:backgroundTint="@color/white"
+        app:itemIconTint="@color/black"
+        app:itemTextColor="@color/black"
+        app:menu="@menu/navigation"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="-1dp"
+        android:layout_marginRight="2dp" />
+
+    <TextView
+        android:id="@+id/countsteps"
+        android:layout_width="258dp"
+        android:layout_height="327dp"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="49dp"
-        app:cpb_background_progressbar_color="#b6bbd8"
-        app:cpb_background_progressbar_width="5dp"
-        app:cpb_progress_direction="to_right"
-        app:cpb_progressbar_color="#3f51b5"
-        app:cpb_progressbar_width="10dp"
-        app:cpb_round_border="false" />
+        android:layout_marginTop="28dp"
+        android:text="You have made"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"/>
 
-    <Button
-        android:id="@+id/button6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="5dp"
-        android:layout_marginBottom="14dp"
-        android:text="Calculator" />
-
-    <Button
-        android:id="@+id/button7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="305dp"
+        android:layout_height="153dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="161dp"
-        android:layout_marginBottom="13dp"
-        android:text="Exercises" />
+        android:layout_marginBottom="73dp"
+        android:text="TextView" />
 
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="42dp"
-        android:layout_marginBottom="18dp"
-        android:text="Meals" />
 
 </RelativeLayout>
 
