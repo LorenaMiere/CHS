@@ -6,7 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/a287a11c793fa60d0c3662cb1683a4142"
+    android:background="@drawable/abstact"
     android:scrollbarSize="10dp"
     tools:context=".Activity4">
 

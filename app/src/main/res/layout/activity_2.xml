@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:visibility="visible"
-    android:background="@drawable/a287a11c793fa60d0c3662cb1683a4142"
+    android:background="@drawable/abstact"
     tools:context=".MainActivity">
 
 
@@ -45,12 +45,15 @@
 
     <TextView
         android:id="@+id/textView8"
-        android:layout_width="305dp"
-        android:layout_height="153dp"
+        android:layout_width="334dp"
+        android:layout_height="154dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="73dp"
-        android:text="TextView" />
+        android:text=""
+        android:textSize="24sp"
+        android:textStyle="bold|italic" />
+
 
 
 </RelativeLayout>

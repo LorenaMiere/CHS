@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/a287a11c793fa60d0c3662cb1683a4142"
+    android:background="@drawable/abstact"
     tools:context=".Activity3">
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
@@ -172,7 +172,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginStart="147dp"
         android:layout_marginBottom="80dp"
-        android:background="@drawable/a287a11c793fa60d0c3662cb1683a4142"
+        android:background="@drawable/abstact"
         android:text="Calculate" />
 
     <TextView

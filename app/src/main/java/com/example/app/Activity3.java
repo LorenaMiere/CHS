@@ -32,6 +32,8 @@ public class Activity3 extends AppCompatActivity {
     private RadioButton male;
 
     private double age1 = 0;
+    private double weight1=0;
+    private double height1=0;
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -105,8 +107,8 @@ public class Activity3 extends AppCompatActivity {
 
         }
     public void makeCalculations() {
-        if (age.getText().toString().matches("") || weight.getText().toString() == null || height.getText().toString() == null) {
-            result.setText("baga o valuaer");
+        if (age.getText().toString().matches("") || weight.getText().toString().matches("")  || height.getText().toString().matches("") ) {
+            result.setText("Introduceti o valoare");
             return;
         }
         double age1=Double.valueOf(age.getText().toString());
@@ -134,20 +136,23 @@ public class Activity3 extends AppCompatActivity {
                     if((moderate.isChecked()&&light.isChecked()&&active.isChecked())||(!moderate.isChecked()&&light.isChecked()&&active.isChecked())||
                             (moderate.isChecked()&&!light.isChecked()&&active.isChecked())||(moderate.isChecked()&&light.isChecked()&&!active.isChecked())){
                         result.setText("Selectati o singura optiune");
+                        return;
                     }else
                     if(!moderate.isChecked()&&!light.isChecked()&&!active.isChecked()){
                         result.setText("Selectati o optiune");
+                        return;
                     }
                     if(female.isChecked()&&male.isChecked()) {
                         result.setText("Selectati doar o optiune");
+                        return;
                     }else
                     if(!female.isChecked()&&!male.isChecked()){
                         result.setText("Selectati una din cele doua optiuni ");
+                        return;
                     }
 
         Intent intent = new Intent(Activity3.this, Activity2.class);
         intent.putExtra("result",Double.toString(result1));
-        System.out.println("Resul1"+result1);
         startActivity(intent);
     }
 

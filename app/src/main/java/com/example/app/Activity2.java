@@ -15,6 +15,8 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+import java.text.DecimalFormat;
+
 public class Activity2 extends AppCompatActivity{
 
     protected TextView textView;
@@ -80,7 +82,7 @@ public class Activity2 extends AppCompatActivity{
 
 
                     }
-                    textView.setText("You have made\n" + " " + stepCount.toString()+ "\n" + " " +"steps and burned\n " + " " + burned.toString() + " \n" +" calories");
+                    textView.setText("You have made\n" + " " + stepCount.toString()+ "\n" + " " +"steps and burned\n " + " " + Float.valueOf(burned.toString()) + " \n" +" calories");
                     Intent mIntent = getIntent();
                     String result1 = mIntent.getStringExtra("result");
                   if (result1 != null) {
@@ -91,13 +93,10 @@ public class Activity2 extends AppCompatActivity{
                   if (b != 0.0) {
                       double newResult=b;
                       newResult=newResult-(double)burned;
+                      DecimalFormat f= new DecimalFormat("##.00");
                       System.out.println("Result2"+ newResult);
-                      textView8.setText(Double.toString(newResult));
+                      textView8.setText("Result between the calories needed - burned calories: "+Double.toString(Double.parseDouble(f.format(newResult))));
                     }
-
-
-
-
 
                 }
             }
